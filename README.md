@@ -87,5 +87,5 @@
     </ul>
 </body>
 ```
-[用户信息注册] (https://github.com/E0253740/Java-Web-Project/main/用户信息注册.md)
+[用户信息注册] (https://github.com/E0253740/Java-Web-Project/blob/main/用户信息注册.md)
 
