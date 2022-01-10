@@ -87,5 +87,9 @@
     </ul>
 </body>
 ```
-[用户信息注册] (https://github.com/E0253740/Java-Web-Project/blob/main/用户信息注册.md)
-
+[3.1用户信息注册](https://github.com/E0253740/Java-Web-Project/blob/main/用户信息注册.md)
+[3.2用户信息查询](https://github.com/E0253740/Java-Web-Project/blob/main/用户信息查询.md)
+[3.3试题信息注册](https://github.com/E0253740/Java-Web-Project/blob/main/试题信息注册.md)
+[3.4试题信息查询](https://github.com/E0253740/Java-Web-Project/blob/main/试题信息查询.md)
+[3.5参加考试](https://github.com/E0253740/Java-Web-Project/blob/main/参加考试.md)
+[3.6试题信息查询](https://github.com/E0253740/Java-Web-Project/blob/main/试题信息查询.md)
