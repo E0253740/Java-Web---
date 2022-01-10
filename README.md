@@ -93,3 +93,8 @@
 [3.4试题信息查询](https://github.com/E0253740/Java-Web-Project/blob/main/试题信息查询.md)
 [3.5参加考试](https://github.com/E0253740/Java-Web-Project/blob/main/参加考试.md)
 [3.6试题信息查询](https://github.com/E0253740/Java-Web-Project/blob/main/试题信息查询.md)
+
+### 4. 反思
+1. 区分管理员和普通用户: 管理员具有更多权限(在登陆页面添加Filter,导向管理员拥有更多功能的页面)
+2. DAO层操作时parameter是一个一个枚举出来的, 当属性增多会极大增加工作量 -- 解决方法: 使用反射, 降低耦合度, 提升扩展性
+3. 
