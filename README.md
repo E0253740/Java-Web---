@@ -18,4 +18,74 @@
 4. Entity类: 包含两个实体类: 学生与问题
 5. Web框架下文件: 包含HTML与jsp文件。HTML文件用于前端界面渲染, javascipt动态界面; jsp用于前后端交互以及动态运行java文件
 
+## 4. 页面分析
+
+### 1. 登陆页面
+![image](https://user-images.githubusercontent.com/66471809/148714074-2491415f-dd62-4b84-ade2-5d22919757a0.png)
+```HTML
+<form action="/myWeb/login" method="post">
+                  <table border="2">
+                      <tr>
+                          <td>登录名</td>
+                          <td><input type="text" name="userName"/></td>
+                      </tr>
+                      <tr>
+                          <td>密码</td>
+                          <td><input type="password" name="password"/></td>
+                      </tr>
+                      <tr>
+                          <td><input type="submit" value="登录"/></td>
+                          <td><input type="reset" /></td>
+                      </tr>
+                  </table>
+
+              </form>
+```
+特征1: **action="/myWeb/login"** 意味着用户点击提交按钮后会出发LoginServlet, 与后端交互 <br/>
+特征2: **method="post"** 访问方式为post,更加安全，防止用户账户信息暴露在地址栏以及被浏览器缓存<br/>
+
+### 2. 主页面index.html
+![image](https://user-images.githubusercontent.com/66471809/148714395-7733b6cc-a9ed-43f5-a447-320052d30a1c.png)
+```HTML
+<frameset rows="15%,85%">
+    <frame name="top" src="/myWeb/top.html"/>
+    <frameset cols="15%,85%">
+        <frame name="left" src="/myWeb/left.html"/>
+        <frame name="right">
+    </frameset>
+</frameset>
+</html>
+```
+主页面由两部分组成，left.html && top.html <br/>
+
+
+### 3. 左侧功能栏
+
+左侧功能栏集合了本项目用到的所有主要功能, 是项目的核心所在, 共有3大功能, 用户信息管理, 试题信息管理, 考试管理
+
+```HTML
+<body>
+    <ul>
+        <li>用户信息管理
+             <ol>
+                 <li><a href="/myWeb/user_Add.html" target="right">用户信息注册</a></li>
+                 <li><a href="/myWeb/user/find" target="right">用户信息查询</a></li>
+             </ol>
+        </li>
+        <li>试题信息管理
+            <ol>
+                <li><a href="/myWeb/question_Add.html" target="right">试题信息注册</a></li>
+                <li><a href="/myWeb/question/find" target="right">试题信息查询</a></li>
+            </ol>
+        </li>
+        <li>考试管理
+            <ol>
+                <li><a href="/myWeb/question/rand" target="right">参加考试</a></li>
+                <li><a href="/myWeb/question/find" target="right">试题信息查询</a></li>
+            </ol>
+        </li>
+    </ul>
+</body>
+```
+#### 3.1.1 用户信息注册
 
