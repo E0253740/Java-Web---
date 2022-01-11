@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * 2020/4/29
+ * 2021/11/29
  */
 public class OneListener implements ServletContextListener {
 
@@ -40,7 +40,7 @@ public class OneListener implements ServletContextListener {
           while(it.hasNext()){
               Connection con =(Connection)  it.next();
               if(con!=null){
-                  System.out.println("兄弟们，我"+con+" 现行一步，20年后老子还是条好汉");
+                  System.out.println("兄弟们，我"+con+" 断开连接");
               }
           }
 
